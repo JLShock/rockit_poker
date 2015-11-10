@@ -1,0 +1,16 @@
+-- BandDB.sql
+
+drop database if exists band;
+create database band;
+use band;
+
+create table Player (
+	PlayerID int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	PlayerName varchar(255) NOT NULL,
+	PlayerRank int NOT NULL
+);
+
+insert into Player (PlayerName,PlayerRank) values ("Joe Kuether", 1);
+insert into Player (PlayerName,PlayerRank) values ("Dan Smith", 2);
+insert into Player (PlayerName,PlayerRank) values ("Jason Mercier", 3);
+insert into Player (PlayerName,PlayerRank) values ("Paul Volpe", 3);
